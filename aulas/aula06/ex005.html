@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeios Passos com Dom</title>
+    <style>
+        body{
+            background-color: rgb(120, 161, 25);
+            color: rgb(54, 131, 207);
+            font: normal 15pt Arial;
+        }
+
+        .nome{
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Primeios Passos com Dom</h1>
+<p>Aqui vai o resultado</p>
+<p> Apenda a utilizar o <strong> Dom </strong> em JavaEscript</p>
+<div id="iinome">Clik em mim</div>
+
+<div class="nome">
+<p>Olá, mundo!! </p>
+</div>
+
+<script>
+    //veja o exemplo abaixo
+
+/*
+       window.document.write(window.navigator.appName)/url
+       window.document.write(window.document.URL)
+       
+       para replicar algo escrito por uma tag em seu document
+       var p1 = window.document.getElementsByTagName('p')[0]
+       
+       o que esta entre parenteses e a  tag selecionada 
+       o queesta entre chaves e a em qual posição a tag esta 
+
+       //getElementById('')[] >> para id 
+       //getElementsByClassName('')[] >> para Class
+       //getElementsByTagName('')[] >> para qual quer tag
+       //getElementsByName('')[] >>para name
+*/
+     
+       let corpo  = window.document.body
+       corpo.style.background = 'black'
+
+/* 
+       var p1 = window.document.getElementsByTagName('div')[1]
+
+       window.document.write('Esta escrito assim: ' + p1.
+       innerText)
+*/
+
+//class .
+//id #
+
+/*
+       var negrito = window.document.getElementsByTagName('p')[1]
+
+       window.document.write(negrito.innerText)
+
+       //inner.Html utiliza tudo inclusive as tags </>
+       //o inner.Tex utiliza so o texto
+
+       let div = window.document.getElementsByClassName('nome')[0]
+
+       div.style.fontSize = '2.5em'
+       div.style.color = '#fff'
+       div.style.background = '#764'
+
+
+       let iinome = window.document.getElementById('iinome')
+       iinome.style.color = '#81af25'
+*/
+   var  d = window.document.querySelector('div#iinome')
+   d.style.color = 'green'
+
+</script>
+</body>
+</html>

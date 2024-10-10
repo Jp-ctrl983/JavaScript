@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     #num{
+            width: 50px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    <P>LIMITE DE VELOCIDADE <strong>60 KM/H</strong></P>
+    <form action="" method="post">
+        Velocidade do carro: <input type="number" name="num" id="num"> km/h
+        <br>
+        <input type="button" value="Verificar" onclick="calcular()">
+    </form>
+    <div id="res">
+    </div>
+    <script>
+        function calcular(){
+            var num = window.document.getElementById('num')
+            var res = window.document.getElementById('res')
+            var vel = Number(num.value)
+            res.innerHTML = `<p>Sua velocidade e de <strong>${vel} Km/h</strong></p>`
+            res.innerHTML += `<p>Você esta dirigindo bem!!</p>`
+
+            if (vel > 60){
+                res.innerHTML += `Você foi <strong>MULTADO</strong> por esseso de velocidade`
+            }
+        }
+    </script>
+</body>
+</html>

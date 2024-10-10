@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+        }
+
+        h1,h2{
+            text-align: center;
+            color: rgb(17, 51, 145);
+        }
+        p{
+            color: rgb(19, 102, 11);
+        }
+        pre{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explicação de Variaveis compostas e if a else</h1>
+    <h2>Explicarei com exemplos</h2>
+    <div>
+        <p>Coloque tres number abaixo:</p>
+        <input type="number" id="num" name="num">
+        <input type="submit" id="value" value="Enviar" onclick="cau()">
+        
+        <div id="res"></div>
+    </div>
+
+    <ol><strong>Confira o codigo abaixo!!!</strong></ol>
+    <pre>
+    <strong><em>let num = [3,2,5]</em></strong>
+
+    num[3] = 6
+    num.push(7)
+
+    //Para mostrar isoladamente-----------
+    console.log(`Mostra isoladamente ${num[2]}`)
+
+    num.sort()
+    console.log(`Termo com organisação sort() fica da seguinte forma ${num}`)
+
+    console.log(`Ó length é ${num.length}`)
+    console.log(`As variáveis são ${num}`)
+    </pre>
+    
+    <script>
+        function cau(){
+            let num = window.document.getElementsByName('num')
+            let res = window.document.getElementById('res')
+            let nu = Number(num.value)
+            res.innerHTML = `Seu numero é ${num}`
+        }
+    </script>
+</body>
+</html>

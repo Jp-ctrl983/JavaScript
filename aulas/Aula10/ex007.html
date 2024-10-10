@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+          background: rgb(181, 198, 245);
+          font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="tx1" id="tx1"> x
+    <input type="number" name="tx2" id="tx2">
+    <input type="button" value="Somar" onclick="soma()">
+
+    <div id="res">Resultado: </div>
+    <script>
+        function soma(){
+            var tx = window.document.getElementById('tx1')
+            var txx = window.document.getElementById('tx2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tx.value)
+            var n2 = Number(txx.value)
+            var n3 = n1 * n2
+            res.innerHTML = `A multiplicação entre ${n1} e ${n2} e ingual a <strong>${n3}</strong>`
+        }
+    </script>
+</body>
+</html>

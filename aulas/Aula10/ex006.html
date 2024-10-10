@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos dom</title>
+    <style>
+        div#areas{
+            font: normal 20pt arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!--para disparar um  clik-->
+    <!--onclick e o nome da  ação-->
+    
+    <div id="areas">
+        Interaja...
+    </div>
+
+    <script>
+        //clicar() eo nome da  function
+
+        var a = window.document.getElementById('areas')
+        //para simplificar ocodigo html 
+
+        /*addEventListener e uma forma de abreviação ,colocar a função na frente e  depois o nome dela,
+         a.addEventListener('click', clica) click e a função e clica e seu nome*/
+
+        a.addEventListener('click', clica)
+        a.addEventListener('mouseenter',enter)
+        a.addEventListener('mouseout', sair)
+
+        function clica() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function enter(){
+            a.innerText = 'entrou!!'
+            a.style.background = 'blue'
+            a.style.color = 'green'
+        }
+
+        function sair(){
+            a.innerText = 'saiu!!' 
+            a.style.color = 'black'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro JavaEscript</title>
+    <style>
+        @charset "UTF-8";
+
+        body{
+            background-color: rgba(107, 0, 207, 0.644);
+            color: rgb(55, 5, 112);
+            font:normal 15pt Arial, sans-serif;
+        }
+        h1{
+            background-color: rgb(43, 0, 56);
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        p{
+            margin: 10px;
+        }
+
+        .nome{
+            color: rgba(0, 0, 0, 0.596);
+        }
+    
+    </style>
+     </head>
+   <body>
+       
+     <H1>Olá,Mundo! JavaEscript</H1>
+     <p><strong>Livrei da maldição!</strong></p>
+     <p class="nome">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste ducimus rerum sint officiis inventore amet similique ullam aspernatur, saepe ut culpa voluptatem iure hic dolor velit eaque ea rem qui?</p>
+
+     <script>
+         
+/*Number.parseInt nesse caso e para transformar o n1 e o n2 em numeros inteiros pois se retirarmos ele ficaria uma variavel string*/
+
+/*para numero inteiro e <Number.parselnt(n)>
+
+para numero fracionario 3.3 e <Number.parsseFloat(n)>*/
+
+/*so Number serve para qual quer tipo de soma*/
+
+    var n1 = Number(window.prompt('Digite outro numero: ')) 
+
+/*da mesma forma do numero podemos faser com <string ou n.tostring()>*/ 
+
+    var n2 = Number(window.prompt('Digite outro numero:  '))
+         var s = n1 + n2
+    window.alert(`A soma entre ${n1} e ${n2} e igual a ${s}`)
+
+//para adição teria que ser number + mumber
+//string + string e concatenação
+
+     </script>
+ </body>
+</html>

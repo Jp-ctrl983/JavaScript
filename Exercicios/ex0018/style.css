@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(36, 109, 219);
+    font: normal 11pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+    border-radius: 2px;
+    color: aliceblue;
+}
+
+select#flist{
+    width:200px;
+    margin-bottom: 8px;
+}
+
+input#fnum{
+    width: 100px;
+    height: 18px;
+    background-color: rgba(134, 182, 255, 0.719);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    transition: all 1s;
+}
+
+input#fnum:hover{
+    background-color: rgb(78, 153, 219);
+}
+
+input[type=submit]{
+    width: 80px;
+    background-color: #3c7ed3;
+    font-size: 1em;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+input[type=submit]:hover{
+    background-color: #174283;
+}

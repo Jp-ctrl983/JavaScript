@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tudo no console</h1>
+  <script>
+/*
+    //essa maneira e muito difício..........
+    console.log(`${val[0]}`)
+    console.log(`${val[1]}`)
+    console.log(`${val[2]}`)
+    console.log(`${val[3]}`)
+    console.log(`${val[4]}`)
+*/
+        var val = [9, 1 , 4 , 3 , 5]
+        //para organisar
+        val.sort()
+
+        //maneira inteligente
+        for (var res = 0 ; res < val.length ;res++){
+            console.log(`${val[res]}`)
+        }
+      
+        //maneira mais simplificada
+         for (var s in val){
+            console.log(`A posição ${s} tem valor ${val[s]}`)
+         }
+
+         //ultima identificação
+         let pos = val.indexOf(9)
+         if(pos == -1){
+            console.log(`Não foi encontrado`)
+         }else{
+              console.log(`Para identificar a posição ${pos}`)
+         }
+    </script>
+</body>
+</html>
