@@ -2,10 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('form-produto');
     const listaProdutos = document.getElementById('lista-produtos');
 
-    // Carregar produtos ao iniciar
     carregarProdutos();
 
-    // Adicionar produto
+    //add Produto
     form.addEventListener('submit', (e) => {
         e.preventDefault();
 
